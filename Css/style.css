@@ -449,3 +449,396 @@ nav a:hover{
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
+
+@media screen and (max-width:700px){
+    .navegador{
+        width: 100%;
+    }
+
+    .navegador nav{
+        display: none;
+    }
+
+    .navegador .buscar{
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+
+    .navegador .buscar .btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: black;
+        z-index: 1;
+    }
+
+    .navegador .carrito{
+        color: white;
+        font-size: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .carrito .btn2{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: black;
+        margin-top: 100px;
+        margin-left: 300px;
+    }
+
+    .navegador .logo{
+        width: 100%;
+        text-align: left;
+        margin-top: -20px;
+    }
+
+    .navegador .logo img{
+        width: 300px;
+        height: 100px;
+    }
+
+    .contenedor{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider-contenedor{
+        display: flex;
+        width: 100%;
+        height: 370px;
+    }
+
+    .contenido-slider{
+        width: 100%;
+        height: 0px;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        flex-shrink: 0;
+        padding-top: 0px;
+    }
+
+    .contenido-slider > img{
+        width: 100%;
+        height: 200px;
+        padding-bottom: 0px;
+    }
+
+    .contenido-slider > div{
+        width: 40%;
+    }
+
+    .contenido-slider h2{
+        text-align: center;
+        line-height: 20px;
+        font-size: 20px;
+        height: 135px;
+        width: 300px;
+        padding-left: 50px;
+    }
+
+    .uno{
+        width: 100%;
+        height: 600px;
+        display: block;
+        background-color: rgb(236, 233, 233);
+        margin-top: -20px;
+    }
+
+    .historia{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    .video video{
+        width: 300px;
+        height: 200px;
+        padding-left: 50px;
+        padding-top: 0px;
+    }
+
+    .historia h1{
+        font-weight: 500;
+        padding-top: 50px;
+    }
+
+    .historia p{
+        font-size: 15px;
+        font-weight: 300;
+        text-align: justify;
+        color: gray;
+    }
+
+    .dos{
+        width: 100%;
+        height: 650px;
+        display: block;
+        background-color: rgb(221, 216, 216);
+    }
+    
+    .ilustracion{
+        width: 40%;
+    }
+    
+    .ilustracion img{
+        width: 250px;
+        height: 250px;
+        padding-left: 80px;
+        padding-top: 10px;
+    }
+    
+    .sobre-nosotros{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sobre-nosotros h1{
+        font-weight: 400;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    .sobre-nosotros p{
+        font-size: 16px;
+        font-weight: 200;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        color: gray;
+    }
+    
+    .mision{
+        padding-top: 0px;
+    }
+
+    .tres{
+        width: 100%;
+        height: 800px;
+    }
+    
+    .tres h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .tres img{
+        width: 150px;
+        height: 100px;
+        padding-top: 20px;
+    }
+    
+    .tres h3{
+        font-size: 15px;
+    }
+
+    .tres p{
+        font-size: 15px;
+        text-align: justify;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+    }
+
+    .tres .general{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .tres .caja1{
+        width: 80%;
+        border: 2px solid black;
+        text-align: center;
+        margin-left: 40px;
+        box-shadow: 0 0 8px 0 black;
+    }
+
+    .tres .caja2{
+        width: 80%;
+        border: 2px solid black;
+        text-align: center;
+        margin-left: 40px;
+        box-shadow: 0 0 8px 0 black;
+        margin-top: 50px;
+    }
+
+    .cuatro{
+        width: 100%;
+        height: 500px;
+    }
+
+    .cuatro h1{
+        text-align: center;
+        margin-top: 0px;
+        font-size: 30px;
+    }
+
+    .carrusel-items{
+        display: flex;
+        padding-top: 80px;
+        width: 80%;
+        overflow-x: hidden;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .pie-pagina{
+        width: 100%;
+        background-color: rgb(46, 44, 44);
+    }
+    
+    .pie-pagina .grupo-1{
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding: 0px 0px;
+        height: 620px;
+    }
+    
+    .pie-pagina .grupo-1 .box figure{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .pie-pagina .grupo-1 .box figure img{
+        width: 250px;
+        height: 180px;
+        padding-left: 40px;
+        padding-bottom: 0px;
+        padding-top: 30px;
+    }
+    
+    .pie-pagina .grupo-1 .box h2{
+        color: white;
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .pie-pagina .grupo-1 .box p{
+        color: #efefef;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        text-align: center;
+        padding-right: 10px;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper{
+        margin-left: -15px;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul{
+        list-style: none;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li{
+        width: 42px;
+        height: 42px;
+        line-height: 55px;
+        margin: 0 10px 0px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid white;
+        float: left;
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li .fa{
+        color: white;
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .facebook:hover{
+        border: 5px solid blue;
+        box-shadow: 0 0 15px blue;
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-facebook{
+        color: blue;
+        text-shadow: 0 0 15px blue;
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .twitter:hover{
+        border: 5px solid rgb(29, 155, 240);
+        box-shadow: 0 0 15px rgb(29, 155, 240);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-twitter{
+        color: rgb(29, 155, 240);
+        text-shadow: 0 0 15px rgb(29, 155, 240);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .instagram:hover{
+        border: 5px solid rgb(247, 118, 200);
+        box-shadow: 0 0 15px rgb(247, 118, 200);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-instagram{
+        color: rgb(247, 118, 200);
+        text-shadow: 0 0 15px rgb(247, 118, 200);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .google:hover{
+        border: 5px solid rgb(240, 75, 92);
+        box-shadow: 0 0 15px rgb(240, 75, 92);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-google{
+        color: rgb(240, 75, 92);
+        text-shadow: 0 0 15px rgb(240, 75, 92);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .whatsapp:hover{
+        border: 5px solid rgb(70, 231, 99);
+        box-shadow: 0 0 15px rgb(70, 231, 99);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-whatsapp{
+        color: rgb(70, 231, 99);
+        text-shadow: 0 0 15px rgb(70, 231, 99);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-2{
+        background-color: black;
+        padding: 20px 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    .pie-pagina .grupo-2 small{
+        font-size: 15px;
+    }
+
+}
