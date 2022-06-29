@@ -1,0 +1,875 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navegador{
+    background-color: white;
+    display: flex;
+    height: 150px;
+}
+
+.navegador .lista{
+    display: none;
+}
+
+nav{
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+nav a{
+    display: inline-flex;
+    margin-top: 50px;
+    font-size: 16px;
+    padding-right: 60px;
+    padding-top: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
+nav a:hover{
+    color: var(--color-primary);
+}
+
+.navegador .buscar{
+    position: absolute;
+    padding: 5px;
+    margin-left: 1100px;
+    margin-top: 50px;
+}
+
+.navegador .buscar input{
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.navegador .buscar .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+}
+
+.navegador .buscar:hover input{
+    width: 100px;
+}
+
+.navegador .buscar input:focus{
+    width: 150px;
+}
+
+.carrito{
+    width: 10%;
+    text-align: center; 
+}
+
+.carrito .btn2{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: black;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 18px;
+}
+
+.carrito .btn2:hover{
+    color: white;
+    background-color: black;
+}
+
+.logo{
+    width: 30%;
+    text-align: center;
+}
+
+.logo img{
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+
+.contenedor{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+}
+
+.slider-contenedor{
+    display: flex;
+    width: 100%;
+}
+
+.contenido-slider{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contenido-slider > img{
+    width: 400px;
+}
+
+.contenido-slider > div{
+    width: 40%;
+}
+
+.contenido-slider h2{
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.uno{
+    width: 100%;
+    height: 630px;
+    display: flex;
+    background-color: rgb(236, 233, 233);
+}
+
+.historia{
+    width: 50%;
+    text-align: center;
+}
+
+.video{
+    width: 50%;
+}
+
+.video video{
+    width: 500px;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 90px;
+}
+
+.historia h1{
+    padding-top: 200px;
+    font-weight: 500;
+}
+
+.historia p{
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    color: gray;
+}
+
+.dos{
+    width: 100%;
+    height: 630px;
+    display: flex;
+    background-color: rgb(221, 216, 216);
+}
+
+.ilustracion{
+    width: 40%;
+}
+
+.ilustracion img{
+    width: 300px;
+    height: 300px;
+    padding-left: 150px;
+    padding-top: 150px;
+}
+
+.sobre-nosotros{
+    width: 60%;
+    text-align: center;
+}
+
+.sobre-nosotros h1{
+    font-weight: 500;
+    text-align: center;
+    padding-right: 120px;
+}
+
+.sobre-nosotros p{
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 100px;
+    padding-right: 200px;
+    text-align: justify;
+    color: gray;
+}
+
+.mision{
+    padding-top: 150px;
+}
+
+.tres{
+    width: 100%;
+    height: 600px;
+}
+
+.tres h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tres img{
+    width: 150px;
+    height: 100px;
+    padding-top: 15px;
+}
+
+.tres h3{
+    font-size: 15px;
+}
+
+.tres p{
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+.tres .general{
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.tres .caja1{
+    width: 30%;
+    border: 2px solid black;
+    text-align: center;
+    margin-left: 200px;
+    box-shadow: 0 0 8px 0 black;
+}
+
+.tres .caja2{
+    width: 30%;
+    border: 2px solid black;
+    text-align: center;
+    margin-left: 170px;
+    box-shadow: 0 0 8px 0 black;
+}
+
+.cuatro{
+    width: 100%;
+    height: 500px;
+}
+
+.cuatro h1{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.carrusel-items{
+    display: flex;
+    padding-top: 80px;
+    width: 50%;
+    overflow-x: hidden;
+    align-items: center;
+    margin-left: 350px;
+}
+
+.carrusel-item img{
+    object-fit: cover;
+    padding-right: 100px;
+}
+
+.carrusel-item .adidas{
+    width: 250px;
+}
+
+.carrusel-item .nike{
+    width: 250px;
+}
+
+.carrusel-item .compensar{
+    width: 500px;
+}
+
+.carrusel-item .bogota{
+    width: 500px;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(46, 44, 44);
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    height: 200px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .box .wrapper{
+    background-color: black;
+}
+
+.pie-pagina .grupo-1 .box .wrapper ul{
+    list-style: none;
+}
+
+.pie-pagina .grupo-1 .box .wrapper ul li{
+    width: 55px;
+    height: 55px;
+    line-height: 70px;
+    margin: 0 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid white;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper ul li .fa{
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper .facebook:hover{
+    border: 5px solid blue;
+    box-shadow: 0 0 15px blue;
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-facebook{
+    color: blue;
+    text-shadow: 0 0 15px blue;
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper .twitter:hover{
+    border: 5px solid rgb(29, 155, 240);
+    box-shadow: 0 0 15px rgb(29, 155, 240);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-twitter{
+    color: rgb(29, 155, 240);
+    text-shadow: 0 0 15px rgb(29, 155, 240);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper .instagram:hover{
+    border: 5px solid rgb(247, 118, 200);
+    box-shadow: 0 0 15px rgb(247, 118, 200);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-instagram{
+    color: rgb(247, 118, 200);
+    text-shadow: 0 0 15px rgb(247, 118, 200);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper .google:hover{
+    border: 5px solid rgb(240, 75, 92);
+    box-shadow: 0 0 15px rgb(240, 75, 92);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-google{
+    color: rgb(240, 75, 92);
+    text-shadow: 0 0 15px rgb(240, 75, 92);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper .whatsapp:hover{
+    border: 5px solid rgb(70, 231, 99);
+    box-shadow: 0 0 15px rgb(70, 231, 99);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-whatsapp{
+    color: rgb(70, 231, 99);
+    text-shadow: 0 0 15px rgb(70, 231, 99);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina .grupo-2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:700px){
+
+    .navegador{
+        height: 200px;
+    }
+
+    .navegador nav{
+        display: none;
+    }
+
+    .navegador .buscar{
+        margin-left: 100px;
+        margin-top: 140px;
+    }
+
+    .navegador .buscar .btn{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 15px;
+        z-index: 1;
+    }
+
+    .navegador .carrito{
+        font-size: 15px;
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 250px;
+    }
+
+    .carrito .btn2{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .navegador .logo{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -25px;
+    }
+
+    .navegador .logo img{
+        width: 300px;
+        height: 100px;
+    }
+
+    .navegador .lista{
+        display: block;
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 360px;
+        position: absolute;
+    }
+
+    .navegador .lista .btn3{
+        font-size: 25px;
+    }
+
+    .navegador nav{
+        width: 100%;
+        height: 0px;
+        display: none;
+        position: absolute;
+        background-color: var(--color-primary);
+        height: 200px;
+        z-index: 2;
+        margin-top: 0px;
+    }
+
+    .navegador nav a{
+        display: block;
+        border: 1px solid black;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 0px;
+    }
+
+    .navegador nav a:hover{
+        background-color: rgba(255, 0, 0, 0.74);
+        color: white;
+    }
+
+    .navegador .lista .btn3{
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .navegador .lista {
+        display: block;
+        z-index: 2;
+    }
+
+    @keyframes MuestraMenu {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+
+    .navegador nav.activado{
+        display: block;
+        animation: MuestraMenu 350ms ease-in-out both;
+    }
+
+    .slider-contenedor{
+        display: flex;
+        width: 100%;
+        height: 370px;
+    }
+
+    .contenido-slider{
+        display: block;
+    }
+
+    .contenido-slider > img{
+        height: 210px;
+        padding-bottom: 0px;
+    }
+
+    .contenido-slider h2{
+        text-align: center;
+        line-height: 20px;
+        font-size: 20px;
+        height: 135px;
+        width: 300px;
+        padding-left: 50px;
+    }
+
+    .uno{
+        height: 600px;
+        display: block;
+        background-color: rgb(236, 233, 233);
+        margin-top: -20px;
+    }
+
+    .historia{
+        width: 100%;
+        text-align: center;
+    }
+
+    .video video{
+        width: 300px;
+        height: 200px;
+        padding-left: 50px;
+        padding-top: 0px;
+    }
+
+    .historia h1{
+        font-weight: 500;
+        padding-top: 50px;
+    }
+
+    .historia p{
+        font-size: 14px;
+    }
+
+    .dos{
+        height: 650px;
+        display: block;
+        background-color: rgb(221, 216, 216);
+    }
+    
+    .ilustracion{
+        width: 40%;
+    }
+    
+    .ilustracion img{
+        width: 250px;
+        height: 250px;
+        padding-left: 80px;
+        padding-top: 10px;
+    }
+    
+    .sobre-nosotros{
+        width: 100%;
+    }
+    
+    .sobre-nosotros h1{
+        font-weight: 400;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    .sobre-nosotros p{
+        font-size: 15px;
+        font-weight: 200;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        color: gray;
+    }
+
+    .mision{
+        padding-top: 0px;
+    }
+
+    .tres{
+        width: 100%;
+        height: 800px;
+    }
+
+    .tres h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .tres img{
+        width: 150px;
+        height: 100px;
+        padding-top: 20px;
+    }
+
+    .tres h3{
+        font-size: 15px;
+    }
+
+    .tres p{
+        font-size: 15px;
+        text-align: justify;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+    }
+
+    .tres .general{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .tres .caja1{
+        width: 80%;
+        border: 2px solid black;
+        text-align: center;
+        margin-left: 40px;
+        box-shadow: 0 0 8px 0 black;
+    }
+
+    .tres .caja2{
+        width: 80%;
+        border: 2px solid black;
+        text-align: center;
+        margin-left: 40px;
+        box-shadow: 0 0 8px 0 black;
+        margin-top: 50px;
+    }
+
+    .cuatro{
+        width: 100%;
+        height: 500px;
+    }
+
+    .cuatro h1{
+        text-align: center;
+        margin-top: 0px;
+        font-size: 30px;
+    }
+
+    .carrusel-items{
+        display: flex;
+        padding-top: 80px;
+        width: 80%;
+        overflow-x: hidden;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .pie-pagina{
+        width: 100%;
+        background-color: rgb(46, 44, 44);
+    }
+
+    .pie-pagina .grupo-1{
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding: 0px 0px;
+        height: 550px;
+    }
+
+    .pie-pagina .grupo-1 .box .siguenos{
+        padding-top: 30px;
+    }
+
+    .pie-pagina .grupo-1 .box figure{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .pie-pagina .grupo-1 .box figure img{
+        width: 250px;
+        height: 180px;
+        padding-left: 40px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    
+    .pie-pagina .grupo-1 .box h2{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
+    .pie-pagina .grupo-1 .box p{
+        color: #efefef;
+        text-align: center;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper{
+        margin-left: -15px;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul{
+        list-style: none;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li{
+        width: 42px;
+        height: 42px;
+        line-height: 55px;
+        margin: 0 10px 0px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid white;
+        float: left;
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li .fa{
+        color: white;
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .facebook:hover{
+        border: 5px solid blue;
+        box-shadow: 0 0 15px blue;
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-facebook{
+        color: blue;
+        text-shadow: 0 0 15px blue;
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .twitter:hover{
+        border: 5px solid rgb(29, 155, 240);
+        box-shadow: 0 0 15px rgb(29, 155, 240);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-twitter{
+        color: rgb(29, 155, 240);
+        text-shadow: 0 0 15px rgb(29, 155, 240);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .instagram:hover{
+        border: 5px solid rgb(247, 118, 200);
+        box-shadow: 0 0 15px rgb(247, 118, 200);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-instagram{
+        color: rgb(247, 118, 200);
+        text-shadow: 0 0 15px rgb(247, 118, 200);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .google:hover{
+        border: 5px solid rgb(240, 75, 92);
+        box-shadow: 0 0 15px rgb(240, 75, 92);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-google{
+        color: rgb(240, 75, 92);
+        text-shadow: 0 0 15px rgb(240, 75, 92);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper .whatsapp:hover{
+        border: 5px solid rgb(70, 231, 99);
+        box-shadow: 0 0 15px rgb(70, 231, 99);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-1 .box .wrapper ul li:hover .fa-whatsapp{
+        color: rgb(70, 231, 99);
+        text-shadow: 0 0 15px rgb(70, 231, 99);
+        transition: all 0.5s ease;
+    }
+    
+    .pie-pagina .grupo-2{
+        background-color: black;
+        padding: 20px 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    .pie-pagina .grupo-2 small{
+        font-size: 15px;
+    }
+
+}
