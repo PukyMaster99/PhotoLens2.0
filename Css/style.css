@@ -5,9 +5,13 @@ body{
 }
 
 .navegador{
-    background-color: var(--color-segundary);
+    background-color: white;
     display: flex;
     height: 150px;
+}
+
+.navegador .lista{
+    display: none;
 }
 
 nav{
@@ -24,7 +28,7 @@ nav a{
     padding-right: 60px;
     padding-top: 30px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 
@@ -76,25 +80,25 @@ nav a:hover{
 
 .carrito{
     width: 10%;
-    text-align: center;
+    text-align: center; 
 }
 
 .carrito .btn2{
     width: 55px;
     height: 55px;
     line-height: 55px;
-    color: white;
+    color: black;
     font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: black;
+    background-color: white;
     margin-top: 50px;
     margin-left: 18px;
 }
 
 .carrito .btn2:hover{
-    color: var(--color-primary);
-    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    background-color: black;
 }
 
 .logo{
@@ -112,6 +116,8 @@ nav a:hover{
 .contenedor{
     width: 100%;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
 }
 
 .slider-contenedor{
@@ -451,8 +457,9 @@ nav a:hover{
 }
 
 @media screen and (max-width:700px){
+
     .navegador{
-        width: 100%;
+        height: 200px;
     }
 
     .navegador nav{
@@ -460,51 +467,39 @@ nav a:hover{
     }
 
     .navegador .buscar{
-        margin-left: 200px;
-        margin-top: 100px;
+        margin-left: 100px;
+        margin-top: 140px;
     }
 
     .navegador .buscar .btn{
-        position: absolute;
-        top: 0;
-        right: 0;
         width: 50px;
         height: 50px;
         line-height: 50px;
-        text-align: center;
-        color: white;
         font-size: 15px;
-        border-radius: 50%;
-        cursor: pointer;
-        background-color: black;
         z-index: 1;
     }
 
     .navegador .carrito{
-        color: white;
         font-size: 15px;
-        border-radius: 50%;
-        cursor: pointer;
         position: absolute;
+        margin-top: 140px;
+        margin-left: 250px;
     }
 
     .carrito .btn2{
         width: 50px;
         height: 50px;
         line-height: 50px;
-        color: white;
         font-size: 20px;
-        border-radius: 50%;
-        cursor: pointer;
-        background-color: black;
-        margin-top: 100px;
-        margin-left: 300px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     .navegador .logo{
         width: 100%;
-        text-align: left;
-        margin-top: -20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -25px;
     }
 
     .navegador .logo img{
@@ -512,9 +507,66 @@ nav a:hover{
         height: 100px;
     }
 
-    .contenedor{
+    .navegador .lista{
+        display: block;
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 360px;
+        position: absolute;
+    }
+
+    .navegador .lista .btn3{
+        font-size: 25px;
+    }
+
+    .navegador nav{
         width: 100%;
-        overflow: hidden;
+        height: 0px;
+        display: none;
+        position: absolute;
+        background-color: var(--color-primary);
+        height: 200px;
+        z-index: 2;
+        margin-top: 0px;
+    }
+
+    .navegador nav a{
+        display: block;
+        border: 1px solid black;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 0px;
+    }
+
+    .navegador nav a:hover{
+        background-color: rgba(255, 0, 0, 0.74);
+        color: white;
+    }
+
+    .navegador .lista .btn3{
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .navegador .lista {
+        display: block;
+        z-index: 2;
+    }
+
+    @keyframes MuestraMenu {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+
+    .navegador nav.activado{
+        display: block;
+        animation: MuestraMenu 350ms ease-in-out both;
     }
 
     .slider-contenedor{
@@ -524,23 +576,12 @@ nav a:hover{
     }
 
     .contenido-slider{
-        width: 100%;
-        height: 0px;
         display: block;
-        justify-content: space-around;
-        align-items: center;
-        flex-shrink: 0;
-        padding-top: 0px;
     }
 
     .contenido-slider > img{
-        width: 100%;
-        height: 200px;
+        height: 210px;
         padding-bottom: 0px;
-    }
-
-    .contenido-slider > div{
-        width: 40%;
     }
 
     .contenido-slider h2{
@@ -553,7 +594,6 @@ nav a:hover{
     }
 
     .uno{
-        width: 100%;
         height: 600px;
         display: block;
         background-color: rgb(236, 233, 233);
@@ -563,11 +603,6 @@ nav a:hover{
     .historia{
         width: 100%;
         text-align: center;
-
-    }
-
-    .video{
-        width: 100%;
     }
 
     .video video{
@@ -583,14 +618,10 @@ nav a:hover{
     }
 
     .historia p{
-        font-size: 15px;
-        font-weight: 300;
-        text-align: justify;
-        color: gray;
+        font-size: 14px;
     }
 
     .dos{
-        width: 100%;
         height: 650px;
         display: block;
         background-color: rgb(221, 216, 216);
@@ -609,7 +640,6 @@ nav a:hover{
     
     .sobre-nosotros{
         width: 100%;
-        text-align: center;
     }
     
     .sobre-nosotros h1{
@@ -619,14 +649,14 @@ nav a:hover{
     }
     
     .sobre-nosotros p{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 200;
         padding-left: 30px;
         padding-right: 30px;
         text-align: center;
         color: gray;
     }
-    
+
     .mision{
         padding-top: 0px;
     }
@@ -635,18 +665,18 @@ nav a:hover{
         width: 100%;
         height: 800px;
     }
-    
+
     .tres h1{
         text-align: center;
         margin-top: 50px;
     }
-    
+
     .tres img{
         width: 150px;
         height: 100px;
         padding-top: 20px;
     }
-    
+
     .tres h3{
         font-size: 15px;
     }
@@ -706,15 +736,19 @@ nav a:hover{
         width: 100%;
         background-color: rgb(46, 44, 44);
     }
-    
+
     .pie-pagina .grupo-1{
         width: 100%;
         margin: auto;
         display: block;
         padding: 0px 0px;
-        height: 620px;
+        height: 550px;
     }
-    
+
+    .pie-pagina .grupo-1 .box .siguenos{
+        padding-top: 30px;
+    }
+
     .pie-pagina .grupo-1 .box figure{
         width: 100%;
         height: 100%;
@@ -726,22 +760,19 @@ nav a:hover{
         height: 180px;
         padding-left: 40px;
         padding-bottom: 0px;
-        padding-top: 30px;
+        padding-top: 20px;
     }
     
     .pie-pagina .grupo-1 .box h2{
         color: white;
-        margin-bottom: 25px;
         font-size: 20px;
         text-align: center;
     }
+
     
     .pie-pagina .grupo-1 .box p{
         color: #efefef;
-        margin-bottom: 20px;
-        padding-left: 10px;
         text-align: center;
-        padding-right: 10px;
     }
     
     .pie-pagina .grupo-1 .box .wrapper{

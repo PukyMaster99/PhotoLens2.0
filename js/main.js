@@ -57,3 +57,10 @@ cuatro.addEventListener('mouseout', () => {
 })
 
 start();
+
+const btn3 = document.querySelector('.btn3');
+const nav = document.querySelector('.nav');
+
+btn3.addEventListener('click', () => {
+    nav.classList.toggle('activado');
+});
